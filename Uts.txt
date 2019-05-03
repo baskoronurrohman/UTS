@@ -1,0 +1,81 @@
+
+
+                                                             Classs
+
+using System;
+using System.Linq:
+using System.Threading.Tasks;
+
+namespace ResponsiPemrog0605
+
+	Class Program
+	{
+	   static void Main(string[] args)
+	   {
+			Karyawan kry1 = new Karyawan();
+			
+			kry1.Nik = "190302123";
+			kry1.Nama = "PAIJO";
+			kry1.GajiBulanan = 3000000;
+			
+			karyawan kry2 = new Karyawan();
+			kry2.Nik = "190302124";
+			kry2.Nama = "JONO";
+			kry2.GajiBulanan = 2000000;
+			
+		    Console.WriteLine("No.\tNik/Nama\t\tGaji Bulanan");
+	        Console.WriteLine("_____________________________");
+			Console.WriteLine("1.\t(0) (1)\t\t(2)", kry1.Nik, kry1.Nama, kry1.GajiBulanan);
+			Console.WriteLine("2.\t(0) (1)\t\t(2)", kry2.Nik, kry2.Nama, kry2.GajiBulanan);
+			Console.WriteLine("\n\n");
+			
+			Console.WriteLine("Asiiiiiiiqqqqqq Kenaikan Gaji 10%");
+			Console.WriteLine("\n");
+			Console.WriteLine("No.\tNik/Nama\t\tGaji Bulanan"):
+			Console.WriteLine("_____________________________");
+			Console.WriteLine("1.\t(0) (1)\t\t(2)", kry1.Nik, kry1.Nama, kry1.GajiBulanan + (kry1.GajiBulanan*0,10));
+			Console.WriteLine("2.\t(0) (1)\t\t(2)", kry2.Nik, kry2.Nama, kry2.GajiBulanan + (kry2.GajiBulanan*0,10));
+			Console.ReadKey();
+	    }
+	}
+}
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+using System;
+using System.Linq:
+using System.Threading.Tasks;
+
+namespace ResponsiPemrog0605
+{	
+	Class Karyawan
+	{
+		public Karyawan()
+		{
+		}
+		public Karyawan(string nik, string nama, int gajibulanan)
+		{
+		  if (hajibulanan < 0)
+		  {
+			Console.WriteLine("Gaji Harus Diatas 0");
+		  }
+		  else
+		  {
+			Nik = nik;
+			Nama = nama;
+			GajiBulanan = gajibulanan;
+		  }
+		}
+		public string Nik { get; set; }
+		public string Nama { get; set; }
+		public string GajBulanan { get; set; }
+    }
+}
+
+
+
+	
